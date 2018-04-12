@@ -1,0 +1,38 @@
+{
+  "name": "react-async-component",
+  "version": "1.0.0",
+  "description": "async loading of react components",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Sunil Hari <isunilhari@gmail.com> (https://sunilhari.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-plugin-dynamic-import-node": "1.2.0",
+    "babel-plugin-module-resolver": "3.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "eslint": "4.19.1",
+    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-watch": "3.1.4",
+    "jest": "22.4.3",
+    "prop-types": "15.6.1",
+    "react": "16.3.1",
+    "react-dom": "16.3.1"
+  },
+  "scripts": {
+    "build": "babel lib -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build"
+  }
+}
